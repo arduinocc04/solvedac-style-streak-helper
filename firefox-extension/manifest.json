@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "solvedac-style-streak-helper",
+    "version": "1.0.1",
+
+    "description": "Helps styling solved.ac streak.",
+
+    "icons": {
+        "48": "../icons/icon-48.png"
+    },
+
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+
+    "permissions": ["storage"],
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.acmicpc.net/submit/*"],
+            "js": ["solvedac-style-streak-helper.js"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "solvedac-style@streak.helper",
+            "strict_min_version": "58.0"
+        }
+    }
+}
