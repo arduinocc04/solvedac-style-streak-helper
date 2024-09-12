@@ -1,0 +1,12 @@
+th, td {
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+input.chk {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
